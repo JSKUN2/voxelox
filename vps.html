@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voxelox Hosting</title>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<style>
+    .body{
+        max-width: 100vw;
+        background-color: transparent;
+    }
+    .mainmenu{
+        height: fit-content;
+        padding-bottom: 25px;
+    }
+</style>
+<body>
+    <div class="mobileContainer">
+        <div style="background-color: #272727; height: fit-content; max-width: 700px; display: flex; box-sizing: border-box; flex-direction: row; padding-top: 10px; padding-bottom: 10px;">
+            <section class="top-nav">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+              </label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vps.html" class="active">VPS</a></li>
+                    <li><a href="discord.html">Discord Hosting</a></li>
+                    <li><a href="">Client Area</a></li>
+                </ul>
+              </section>
+            <div style="display: flex; flex-direction: column; align-items: center; height: 100%; width: 100%; justify-content: center">
+                <div style="display: flex; align-items: center">
+                    <div style="display: flex; flex-direction: column; align-items: start">
+                        <div style="font-size: 22px; color: White; font-weight: 800;">Voxelox Hosting</div>
+                        <div style="font-size: 14px; color: white; margin-top: 4px; font-weight: 300; line-height: 3px;">“Hosting Made Simple, Fast and Secure”</div>
+                    </div>
+                </div>
+            </div>
+          </div>   
+        <div class="mainmenu">
+            <div>
+                <div class="vpsarea">
+                    <button class="vpstype" id="intelvpsmbl">
+                        <h1>Intel VPS</h1>
+                    </button>
+                    <button class="vpstype" id="ryzenvpsmbl">
+                        <h1>Ryzen VPS</h1>
+                    </button>
+                </div>
+                <div class="price intelmbl">
+                    <div class="pricejudul">
+                        <h1>Intel VPS</h1>
+                        <p>Find the perfect product that fits your needs.</p>
+                    </div>
+                    <div class="tabelharga">
+                        <h1>Price List</h1>  
+                        <div id="kartuhargaintel"></div>                 
+                    </div>
+                </div>
+                <div class="price ryzenmbl">
+                    <div class="pricejudul">
+                        <h1>Ryzen VPS</h1>
+                        <p>Find the perfect product that fits your needs.</p>
+                    </div>
+                    <div class="tabelharga">
+                        <h1>Price List</h1>
+                        <div id="kartuhargaryzen"></div>                             
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="fitur">
+                <section class="container">
+                    <div>
+                        <div class="deskripsi" style="display: flex; flex-direction: column; gap: 0; justify-content: center; width: 400px;">
+                            <h1>The Powerful Features</h1>
+                            <p>We will provide the best quality for the server by understanding your needs. Providing the best experience for your hosting</p>
+                        </div>
+                        <div class="features">
+                            <div class="card">
+                                <center>
+                                    <h3>Dedicated Resources
+                                    </h3>
+                                    <p>Each VPS comes with allocated CPU, RAM, and storage, ensuring consistent performance and isolation from other users on the same physical server.
+                                    </p>
+                                </center>
+                            </div>
+                            <div class="card">
+                                <center>
+                                    <h3>Full Root Access
+                                    </h3>
+                                    <p>VPS servers provide full administrative access, allowing users to install custom software, configure server settings, and have complete control over the operating environment.
+                                    </p>
+                                </center>
+                            </div>
+                            <div class="card">
+                                <center>
+                                    <h3>Scalability and Flexibility
+                                    </h3>
+                                    <p>VPS plans are easily scalable, allowing you to upgrade resources (like RAM, storage, and CPU) as your needs grow.
+                                    </p>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="faq">
+                    <div class="container-fluid-faq">
+                        <div class="row">
+                          <div class="col-10 offset-1">
+                            <h2 style="text-align: center">FAQ</h2>
+                            <br />
+                            <section class="section">
+                                <details>
+                                    <summary>What is the return policy?</summary>
+                                    <li>No refunds for already provisioned services.
+                                    </li>
+                                  </details>
+                                  <details>
+                                    <summary>Do you offer customer support?</summary>
+                                    <li>Yes, we offer 24/7 customer support.
+                                    </li>
+                                  </details>
+                                  <details>
+                                    <summary>How long does provisioning take?</summary>
+                                    <li>Provisioning usually takes 10 minutes.
+                                    </li>
+                                  </details>
+                              </section>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="bottomnav">
+                    <div class="subbottomnav">
+                        <div>
+                            <div class="bottomlogo">
+                                <div>
+                                    <img src="logo.jpg" alt="" style="clip-path: circle()">
+                                </div>
+                                <div style="margin-left: 10px;">
+                                    <h1>Voxelox Hosting</h1>
+                                    <p>“Hosting Made <b>Simple</b>, <b>Fast</b> and <b>Secure</b>”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bmenu">
+                            <div class="submenu">
+                                <h1>Quick Links</h1>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="vps.html" class="active">VPS</a></li>
+                                    <li><a href="discord.html">Discord Hosting</a></li>
+                                    <li><a href="">Client Area</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu">
+                                <h1>Categories</h1>
+                                <ul>
+                                    <li><a href="#">Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="transform: translateY(100%);">
+                        <div class="hr"></div>
+                        <center>
+                            <p class="copyright">© 2025 Voxelox Hosting. All rights reserved</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="body">
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt=""><span>Voxelox Hosting</span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vps.html" class="active">VPS</a></li>
+                    <li><a href="discord.html">Discord Hosting</a></li>
+                    <li><button class="clientbt">Client Area</button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mainmenu">
+            <div>
+                <div class="vpsarea">
+                    <button class="vpstype" id="intelvps">
+                        <h1>Intel VPS</h1>
+                        <p>Find the perfect product that fits your needs.</p>
+                    </button>
+                    <button class="vpstype" id="ryzenvps">
+                        <h1>Ryzen VPS</h1>
+                        <p>Find the perfect product that fits your needs.</p>
+                    </button>
+                </div>
+                <div class="price intel">
+                    <div class="pricejudul">
+                        <h1>Intel VPS</h1>
+                        <p>Find the perfect product that fits your needs.</p>
+                    </div>
+                    <div class="tabelharga">
+                        <h1>Price List</h1>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name Product</th>
+                                    <th>CPU</th>
+                                    <th>Memory</th>
+                                    <th>Disk</th>
+                                    <th>Price / Month</th>
+                                    <th>Order</th>
+                                </tr>
+                            </thead>
+                            <tbody id="intelTableBody" class="tb1"></tbody>
+                        </table>                    
+                    </div>
+                </div>
+                <div class="price ryzen">
+                    <div class="pricejudul">
+                        <h1>Ryzen VPS</h1>
+                        <p>Find the perfect product that fits your needs.</p>
+                    </div>
+                    <div class="tabelharga">
+                        <h1>Price List</h1>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name Product</th>
+                                    <th>CPU</th>
+                                    <th>Memory</th>
+                                    <th>Disk</th>
+                                    <th>Price / Month</th>
+                                    <th>Order</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ryzenTableBody" class="tb2"></tbody>
+                        </table>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="bottom">
+                <div class="fitur">
+                    <section class="container">
+                        <div>
+                            <div class="deskripsi" style="display: flex; flex-direction: column; gap: 0; justify-content: center; width: 400px;">
+                                <h1>The Powerful Features</h1>
+                                <p>We will provide the best quality for the server by understanding your needs. Providing the best experience for your hosting</p>
+                            </div>
+                            <div class="features">
+                                <div class="card">
+                                    <center>
+                                        <h3>Dedicated Resources
+                                        </h3>
+                                        <p>Each VPS comes with allocated CPU, RAM, and storage, ensuring consistent performance and isolation from other users on the same physical server.
+                                        </p>
+                                    </center>
+                                </div>
+                                <div class="card">
+                                    <center>
+                                        <h3>Full Root Access
+                                        </h3>
+                                        <p>VPS servers provide full administrative access, allowing users to install custom software, configure server settings, and have complete control over the operating environment.
+                                        </p>
+                                    </center>
+                                </div>
+                                <div class="card">
+                                    <center>
+                                        <h3>Scalability and Flexibility
+                                        </h3>
+                                        <p>VPS plans are easily scalable, allowing you to upgrade resources (like RAM, storage, and CPU) as your needs grow.
+                                        </p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="faq">
+                        <div class="container-fluid-faq">
+                            <div class="row">
+                              <div class="col-10 offset-1">
+                                <h2 style="text-align: center;">FAQ</h2>
+                                <br />
+                                <section class="section">
+                                    <details>
+                                        <summary>What is the return policy?</summary>
+                                        <li>No refunds for already provisioned services.
+                                        </li>
+                                      </details>
+                                      <details>
+                                        <summary>Do you offer customer support?</summary>
+                                        <li>Yes, we offer 24/7 customer support.
+                                        </li>
+                                      </details>
+                                      <details>
+                                        <summary>How long does provisioning take?</summary>
+                                        <li>Provisioning usually takes 10 minutes.
+                                        </li>
+                                      </details>
+                                  </section>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="bottomnav">
+                        <div class="subbottomnav">
+                            <div>
+                                <div class="bottomlogo">
+                                    <div>
+                                        <img src="logo.jpg" alt="" style="clip-path: circle()">
+                                    </div>
+                                    <div>
+                                        <h1>Voxelox Hosting</h1>
+                                        <p>“Hosting Made <b>Simple</b>, <b>Fast</b> and <b>Secure</b>”</p>
+                                    </div>
+                                </div>
+                                <p style="font-size: 10px;">Email: <br>Contact:</p>
+                            </div>
+                            <div class="bmenu">
+                                <div class="submenu">
+                                    <h1>Quick Links</h1>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="vps.html">VPS</a></li>
+                                        <li><a href="discord.html">Discord Hosting</a></li>
+                                    </ul>
+                                </div>
+                                <div class="submenu">
+                                    <h1>Categories</h1>
+                                    <ul>
+                                        <li><a href="#">Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="transform: translateY(100%);">
+                            <div class="hr"></div>
+                            <center>
+                                <p class="copyright">© 2025 Voxelox Hosting. All rights reserved</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const details = Array.from(document.querySelectorAll("details"));
+
+        details.forEach(targetDetail => {
+        targetDetail.addEventListener("click", () => {
+            details.forEach(detail => {
+            if (detail !== targetDetail) {
+                detail.removeAttribute("open");
+            }
+            });
+        });
+        });
+
+        $(".c1").hover(function () {
+                $(".ac1").show(); 
+            }, function () {
+                $(".ac1").hide();
+            }
+        );
+        $(".c2").hover(function () {
+                $(".ac2").show(); 
+            }, function () {
+                $(".ac2").hide();
+            }
+        );
+        const intelData = {
+            "products": [
+                { "name": "Small", "cpu": "1 Virtual Core", "memory": "6 GB", "disk": "40 GB", "price": "Rp. 80.000" },
+                { "name": "Starter", "cpu": "2 Virtual Core", "memory": "8 GB", "disk": "50 GB", "price": "Rp. 100.000" },
+                { "name": "Newcomer", "cpu": "4 Virtual Core", "memory": "12 GB", "disk": "100 GB", "price": "Rp. 130.000" },
+                { "name": "Boost", "cpu": "4 Virtual Core", "memory": "16 GB", "disk": "150 GB", "price": "Rp. 160.000" },
+                { "name": "Super", "cpu": "6 Virtual Core", "memory": "24 GB", "disk": "200 GB", "price": "Rp. 230.000" },
+                { "name": "Expert", "cpu": "6 Virtual Core", "memory": "36 GB", "disk": "250 GB", "price": "Rp. 300.000" },
+                { "name": "Big", "cpu": "8 Virtual Core", "memory": "48 GB", "disk": "300 GB", "price": "Rp. 400.000" },
+                { "name": "Mega", "cpu": "8 Virtual Core", "memory": "64 GB", "disk": "350 GB", "price": "Rp. 600.000" }
+            ]
+        };
+
+        const ryzenData = {
+            "products": [
+                { "name": "Small", "cpu": "1 Virtual Core", "memory": "2 GB", "disk": "20 GB", "price": "Rp. 80.000" },
+                { "name": "Starter", "cpu": "1 Virtual Core", "memory": "4 GB", "disk": "25 GB", "price": "Rp. 100.000" },
+                { "name": "Newcomer", "cpu": "2 Virtual Core", "memory": "6 GB", "disk": "50 GB", "price": "Rp. 130.000" },
+                { "name": "Boost", "cpu": "2 Virtual Core", "memory": "8 GB", "disk": "50 GB", "price": "Rp. 160.000" },
+                { "name": "Super", "cpu": "3 Virtual Core", "memory": "12 GB", "disk": "75 GB", "price": "Rp. 230.000" },
+                { "name": "Expert", "cpu": "4 Virtual Core", "memory": "16 GB", "disk": "120 GB", "price": "Rp. 300.000" },
+                { "name": "Big", "cpu": "6 Virtual Core", "memory": "24 GB", "disk": "160 GB", "price": "Rp. 400.000" },
+                { "name": "Mega", "cpu": "6 Virtual Core", "memory": "32 GB", "disk": "200 GB", "price": "Rp. 600.000" }
+            ]
+        };
+
+        function renderTable(data, tableId) {
+            let tableBody = document.getElementById(tableId);
+            tableBody.innerHTML = "";
+            
+            data.products.forEach(product => {
+                let row = `<tr>
+                    <td>${product.name}</td>
+                    <td>${product.cpu}</td>
+                    <td>${product.memory}</td>
+                    <td>${product.disk}</td>
+                    <td>${product.price}</td>
+                    <td><center><a href="#" class="purchase-btn">Purchase</a></center></td>
+                </tr>`;
+                tableBody.innerHTML += row;
+            });
+        }
+        function renderTableMobile(data, tableId) {
+            let tableBody = document.getElementById(tableId);
+            tableBody.innerHTML = "";
+            
+            data.products.forEach(product => {
+                let row = `
+                        <div class="kartuharga bk1">
+                            <h3>${product.name}</h3>
+                            <div class="isitabelkartu">
+                                <div class="labeltabelkartu" style="height:20px;">CPU</div>
+                                <div class="nilaitabelkartu" style="color:#323232;">${product.cpu}</div>
+                            </div>
+                            <div class="isitabelkartu">
+                                <div class="labeltabelkartu" style="height:20px;">Memory</div>
+                                <div class="nilaitabelkartu" style="color:#323232;">${product.memory}</div>
+                            </div>
+                            <div class="isitabelkartu">
+                                <div class="labeltabelkartu" style="height:20px;">Disk</div>
+                                <div class="nilaitabelkartu" style="color:#323232;">${product.disk}</div>
+                            </div>
+                            <div class="isitabelkartu" style="border:none; height:20px;">
+                                <div class="labeltabelkartu">Price</div>
+                                <div class="nilaitabelkartu" style="color:black;">${product.price}</div>
+                            </div>
+                            <div class="bayarkartu"  style="width:90%; display:flex; flex-direction:row; background: #1C6CE4; margin:auto; border-radius:300px; height:40px; padding-left:20px; padding-right:5px; align-items:center; justify-content:space-between; margin-top:20px; display:none;">
+                                <div class="hargakartubayar">${product.price}</div>
+                                <button class="bayarkartutombol">Purchase</button>    
+                            </div>
+                        </div>
+                        `;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            renderTable(intelData, "intelTableBody");
+            renderTable(ryzenData, "ryzenTableBody");
+            renderTableMobile(intelData, "kartuhargaintel");
+            renderTableMobile(ryzenData, "kartuhargaryzen");
+            $(document).on("mouseenter", "tbody tr", function () {
+                $(this).css("outline", "2px solid #1C6CE4");
+                $(this).find(".purchase-btn").css("display", "flex");
+            }).on("mouseleave", "tbody tr", function () {
+                $(this).css("outline", "none");
+                $("tbody").find(".purchase-btn").css("display", "none");
+            });
+
+            $(document).on("click", ".bk1", function () {
+                $(".bk1").find(".bayarkartu").css("display", "none");
+                $(this).find(".bayarkartu").css("display", "flex");
+            });
+
+            $("#kartuhargaintel").each(function () {
+                let firstRow = $(this).find(".kartuharga:first");
+                firstRow.trigger("click");
+            });
+        })
+        $("#ryzenvps").click(function (e) { 
+            $(window).scrollTop($("div.ryzen").position().top);
+        });
+        $("#intelvps").click(function (e) { 
+            $(window).scrollTop($("div.intel").position().top);
+        });
+        $("#ryzenvpsmbl").click(function (e) { 
+            $(window).scrollTop($("div.ryzenmbl").position().top);
+        });
+        $("#intelvpsmbl").click(function (e) { 
+            $(window).scrollTop($("div.intelmbl").position().top);
+        });
+    </script>
+</body>
+</html>

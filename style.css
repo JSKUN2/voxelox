@@ -1,0 +1,919 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #595959;
+}
+.mobileContainer {
+    width: 100%;
+}
+.hr2{
+    width: 92%;
+    background: white;
+    height: 3px;
+    border: none;
+    align-self: center;
+}
+.mobileContainer{
+    display: none;
+    height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 10%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21.78px;
+  letter-spacing: 3%;
+  padding-left: 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+.menu ul li a{
+    color: #808080;
+    text-decoration: none;
+}
+.menu ul li a.active{
+  color: #F9F9F9 !important;;
+}
+.clientbt {
+  padding: 8px 15px;
+  border: none;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  width: 160px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21.78px;
+  letter-spacing: 3%;
+}
+.card {
+  max-height: 300px;
+  height: 300px;
+  box-shadow: 0px 10px 30px 0px #00000040;
+  width: 210px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.card h3 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29.05px;
+  letter-spacing: 3%;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.card p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14.52px;
+  letter-spacing: 3%;
+  width: 80%;
+  text-align: left;
+  flex-grow: 1;
+}
+.judul {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: #f9f9f9;
+  background: linear-gradient(#595959, #f9f9f9);
+}
+.judul img {
+  width: 109px;
+  height: auto;
+}
+.judul div h1 {
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 3%;
+}
+.judul div p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0;
+  letter-spacing: 3%;
+}
+.judul div {
+  display: flex;
+  flex-direction: column;
+  gap: -30;
+}
+.mainmenu {
+  height: 200vh;
+}
+.homecard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+.homecard h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 3%;
+}
+.vps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 41px;
+  justify-content: center;
+}
+.cardbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  position: relative;
+}
+.bottom {
+  max-width: 100vw;
+}
+.fitur {
+  height: 100%;
+  max-width: 100vw;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+}
+.bottomnav {
+  height: 100%;
+  max-width: 100%;
+  background-color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.features .card {
+  height: 300px;
+  display: grid;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  max-width: 100vw;
+}
+.container div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.deskripsi {
+  display: flex;
+  flex-direction: column;
+}
+.deskripsi h1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 3%;
+}
+.deskripsi p {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 24.2px;
+  letter-spacing: 3%;
+}
+.activecard {
+  height: 28px;
+  width: 80%;
+  background-color: #060606;
+  color: #f9f9f9;
+  border-radius: 90px;
+  border: none;
+  margin-top: auto;
+  margin-bottom: 10px;
+  display: none;
+  font-family: Inter;
+  font-size: 10px;
+}
+.buttomcenter {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+}
+.features .card h3 {
+  width: 80%;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 3%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.bottomlogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: column;
+  color: #f9f9f9;
+  height: fit-content;
+}
+.bottomlogo img {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+.bottomlogo div h1 {
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 0;
+  margin-top: 25px;
+}
+.bottomlogo div p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 10px;
+}
+.subbottomnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottomnav div div p {
+  color: #b3b3b3;
+}
+.bmenu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 5px;
+}
+.submenu {
+  text-align: left;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+}
+.submenu h1 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 33.89px;
+  letter-spacing: 3%;
+  color: #f9f9f9;
+}
+.submenu ul {
+  list-style: none;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14.21px;
+  letter-spacing: 3%;
+  color: #808080;
+  padding: 0;
+}
+.submenu ul li a {
+  margin: 0;
+  text-decoration: none;
+  color: #808080;
+}
+.hr {
+  width: 100%;
+  margin: 0;
+  align-self: center;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, #000000 0%, #ffffff 50.23%, #000000 100%);
+}
+.copyright {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 3%;
+  color: #f9f9f9;
+}
+.vpstype{
+    border: none;
+    width: 45%;
+    background-color: #060606;
+    color: #F9F9F9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 6px;
+}
+#priceTableBody{
+  padding-top: 15px;
+}
+.hosting{
+    border: none;
+    width: 92%;
+    background-color: #060606;
+    color: #F9F9F9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 6px;
+}
+.logo img{
+    clip-path: circle();
+}
+.hosting h1{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 3%;
+}
+.hosting p{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 9%;
+}
+.vpstype h1{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 3%;
+}
+.vpstype p{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 9%;
+}
+.vpstype h1{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 3%;
+}
+.vpstype p{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 9%;
+}
+.vpsarea{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 25px;
+    padding-top: 25px;
+}
+.pricejudul{
+    width: 92%;
+    border-radius: 10px;
+    background-color: #060606;
+    color: #F9F9F9;
+    margin: auto;
+    margin-top: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.pricejudul h1{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 3%;
+}
+.pricejudul p{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 9%;
+}
+.tabelharga{
+    width: 92%;
+    height: fit-content;
+    margin: auto;
+    background: #F9F9F9;
+    box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.25);
+    color: #060606;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.tabelharga h1{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 3%;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+tr{ 
+    height: 50px;
+    border-radius: 30px;
+    background-color: #F5F8FF;
+    cursor: pointer;
+}
+.purchase-btn {
+    display: none;
+    height: 32px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #22376C;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 9%;
+}
+.faq h1{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 3%;
+    margin-top: 10px;
+}
+.section {
+  padding-top: 4rem;
+  width: 100%;
+  margin: auto;
+}
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid #C8C8C8;
+  color: black;
+  font-family: Inter;
+  position: relative;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 300;
+  list-style: none;
+}
+section > summary:first-child{
+  border: none;
+}
+details summary:after {
+  content: "ᐯ";
+  color: black;
+  position: absolute;
+  font-size: 1rem;
+  line-height: 0;
+  font-weight: bold;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transition: 200ms linear;
+}
+details[open] summary:after {
+  transform: rotate(-90deg);
+}
+details summary {
+  outline: 0;
+  font-weight: bold;
+}
+details li {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+  text-decoration: dotted;
+  font-weight: 600;
+  margin-left: 3rem;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.container-fluid-faq{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.hrcp{
+    width: 100%;
+    transform: translateY(100%);
+}
+@media only screen and (max-width: 700px) {
+  body > * {
+    display: none;
+  }
+  .mobileContainer{
+    display: block !important;
+    text-align: center;
+    height: 100vh;
+  }
+  .material-symbols-outlined {
+    font-size: 24px;
+    padding: 24px 20px;
+    color: white;
+  }
+  .card{
+    width: 90% ;
+  }
+  .card h3{
+    font-size: 16px;
+  }
+  .card p{
+    font-size: 8px;
+  }
+  .vps{
+    gap: 21px;
+  }
+  .homecard h1{
+    margin-bottom: 25px;
+  }
+  .container div{
+    flex-direction: column;
+  }
+  .container div .card{
+    width: 85%;
+    align-self: center !important;
+  }
+  .deskripsi {
+    width: 80%;
+    align-self: center !important;
+    text-align: left;
+  }
+  .bottom{
+    margin: 0;
+    height: fit-content;
+  }
+  .bottomnav{
+    background-color: #272727;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+  }
+  .bmenu{
+    margin: auto;
+    gap: 50px;
+    margin-top: 20px;
+  }
+  .subbottomnav{
+    flex-direction: column !important;
+  }
+  .activecard{
+    font-size:10px;
+  }
+  h2 {
+    vertical-align: center;
+    text-align: center;
+  }
+  
+  html, body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  * {
+    font-family: "Raleway";
+    box-sizing: border-box;
+  }
+  
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #272727;
+    color: #FFF;
+    height: 50px;
+    padding: 1em;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    overflow: hidden;
+  }
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hr{
+    background: linear-gradient(90deg, #272727 0%, #ffffff 50.23%, #272727 100%);
+  }
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 20%;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    height: 2.5em;
+    padding: 0.5em;
+    transform: translateY(50%);
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .vpsarea{
+    gap: 10px;
+  }
+  .vpstype{
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 6px;
+  }
+  .vpstype h1{
+    font-size: 15px;
+    align-self: center;
+    justify-self: center;
+  }
+  .pricejudul{
+    text-align: left;
+    align-items: left;
+  }
+  .tabelharga{
+    align-items: start;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .kartuharga{
+    height: fit-content;
+    align-self: center;
+    background: #F5F9FF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  .isitabelkartu{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #A6CAFF;
+    margin-top: 20px;
+  }
+  .isitabelkartu div{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 9.68px;
+    letter-spacing: 3%;
+  }
+  .kartuharga h3{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 14.52px;
+    letter-spacing: 3%;
+    text-align: left;
+    margin-left: 5%;
+  }
+  .hargakartubayar{
+    color: white;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 9.68px;
+    letter-spacing: 3%;
+  }
+  .bayarkartutombol{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 8.47px;
+    letter-spacing: 3%;
+    border-radius: 300px;
+    background-color: white;
+    width: 40%;
+    height: 70%;
+    border: none;
+  }
+  .summary{
+    text-align: left;
+  }
+  details summary{
+    font-size: 0.8rem;
+  }
+  details *{
+    align-items: start;
+    text-align: left;
+  }
+  details summary::after{
+    font-size: 0.8rem;
+  }
+  .activecard{
+    display: block;
+  }
+  details li{
+    font-size: 0.95rem;
+    margin: 0 0 1rem;
+    padding-top: 0.5rem;
+    text-decoration: dotted;
+    font-weight: 600;
+    margin-left: 0;
+  }
+  .hosting{
+    padding-top: 6px;
+  }
+  .menu li a{
+    color: #808080;
+    text-decoration: none;
+  }
+  .menu li a.active{
+    color: #F9F9F9 !important;;
+  }
+}
