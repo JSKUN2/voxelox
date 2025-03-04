@@ -242,6 +242,7 @@ body {
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 .container div {
   display: flex;
@@ -262,7 +263,7 @@ body {
 .deskripsi p {
   font-family: Inter;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 24.2px;
   letter-spacing: 3%;
 }
@@ -522,13 +523,13 @@ tr{
     cursor: pointer;
 }
 .purchase-btn {
-    display: none;
+    display: flex;
     height: 32px;
     width: 100px;
     align-items: center;
     justify-content: center;
     align-self: center;
-    background-color: #22376C;
+    background-color: #f9f9f9;
     color: white;
     text-decoration: none;
     border-radius: 20px;
@@ -642,15 +643,17 @@ details li {
     color: white;
   }
   .card{
-    width: 90%;
+    width: 40vw;
+    max-width: 40vw;
     max-height: 320px;
+    height: 320px;
     margin: 0;
   }
   .card h3{
     font-size: 16px;
   }
   .card p{
-    font-size: 12px;
+    font-size: 8px;
   }
   .vps{
     gap: 10px;
@@ -792,7 +795,6 @@ details li {
     gap: 0;
   }
   #menu-toggle ~ .menu li {
-    height: 20%;
     height: 0;
     margin: 0;
     padding: 0;
@@ -810,7 +812,7 @@ details li {
     justify-content: center;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     color: white;
     background-color: #272727;
   }
@@ -835,9 +837,6 @@ details li {
     align-items: start;
     padding-left: 25px;
     padding-right: 25px;
-  }
-  .deskripsi h1{
-    margin-top:25px;
   }
   .kartuharga{
     height: fit-content;

@@ -36,11 +36,12 @@
                     <li><a href="https://clients.voxelox.com/">Client Area</a></li>
                 </ul>
               </section>
-            <div style="display: flex; flex-direction: column; align-items: center; height: 100%; width: 100%; justify-content: center;">
-                <div style="display: flex; align-items: center">
-                    <div style="display: flex; flex-direction: column; align-items: start; justify-content: center; margin-top: auto; margin-bottom: auto;">
-                        <div style="font-size: 18px; color: White; font-weight: 800;">Voxelox Hosting</div>
-                        <div style="font-size: 10px; color: white; margin-top: 4px; font-weight: 300; line-height: 3px;">“Hosting Made Simple, Fast and Secure”</div>
+              <div style="display: flex; flex-direction: column; align-items: left; height: 100%; width: 100%; justify-content: left">
+                <div style="display: flex; align-items: left">
+                    <img style="height: 50px; width: 50px; clip-path: circle(); margin-right: 10px" src="./logo.jpg"/>
+                    <div style="display: flex; flex-direction: column; align-items: start">
+                        <div style="font-size: 22px; color: White; font-weight: 800;">Voxelox Hosting</div>
+                        <div style="font-size: 14px; color: white; margin-top: 4px; font-weight: 300; line-height: 3px;">“Hosting Made Simple, Fast and Secure”</div>
                     </div>
                 </div>
             </div>
@@ -164,7 +165,7 @@
                             <div class="submenu">
                                 <h1>Categories</h1>
                                 <ul>
-                                    <li><a href="#">Support</a></li>
+                                    <li><a href="https://clients.voxelox.com/client/plugin/support_manager/client_tickets/departments/">Support</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -341,7 +342,7 @@
                                 <div class="submenu">
                                     <h1>Categories</h1>
                                     <ul>
-                                        <li><a href="#">Support</a></li>
+                                        <li><a href="https://clients.voxelox.com/client/plugin/support_manager/client_tickets/departments/">Support</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -449,7 +450,7 @@
                                 <div class="labeltabelkartu">Price</div>
                                 <div class="nilaitabelkartu" style="color:black;">${product.price}</div>
                             </div>
-                            <div class="bayarkartu"  style="width:90%; display:flex; flex-direction:row; background: #1C6CE4; margin:auto; border-radius:300px; height:40px; padding-left:20px; padding-right:5px; align-items:center; justify-content:space-between; margin-top:20px; display:none;">
+                            <div class="bayarkartu"  style="width:90%; display:flex; flex-direction:row; background: #1C6CE4; margin:auto; border-radius:300px; height:40px; padding-left:20px; padding-right:5px; align-items:center; justify-content:space-between; margin-top:20px;">
                                 <div class="hargakartubayar">${product.price}</div>
                                 <a href="${product.link}"><button class="bayarkartutombol">Purchase</button></a>  
                             </div>
@@ -466,17 +467,15 @@
             renderTableMobile(ryzenData, "kartuhargaryzen");
             $(document).on("mouseenter", "tbody tr", function () {
                 $(this).css("outline", "2px solid #1C6CE4");
-                $(this).find(".purchase-btn").css("display", "flex");
+                $(this).find(".purchase-btn").css("background", "#22376C");
             }).on("mouseleave", "tbody tr", function () {
                 $(this).css("outline", "none");
-                $("tbody").find(".purchase-btn").css("display", "none");
+                $("tbody").find(".purchase-btn").css("background", "#F9F9F9");
             });
 
             $(document).on("click", ".bk1", function () {
                 $(".bk1").css("background", "#F9F9F9");
                 $(this).css("background", "#F5F9FF");
-                $(".bk1").find(".bayarkartu").css("display", "none");
-                $(this).find(".bayarkartu").css("display", "flex");
             });
 
             $("#kartuhargaintel").each(function () {
