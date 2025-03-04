@@ -778,7 +778,7 @@ details li {
     transform: translateX(10%);
     left: 0;
     flex-direction: column;
-    width: 95vw;
+    width: 90vw;
     justify-content: center;
     align-items: end;
   }
