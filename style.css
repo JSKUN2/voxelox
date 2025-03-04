@@ -640,7 +640,7 @@ details li {
     color: white;
   }
   .card{
-    width: 90%;
+    width: 100%;
   }
   .card h3{
     font-size: 16px;
@@ -649,7 +649,7 @@ details li {
     font-size: 12px;
   }
   .vps{
-    gap: 21px;
+    gap: 10px;
   }
   .homecard h1{
     margin-bottom: 25px;
