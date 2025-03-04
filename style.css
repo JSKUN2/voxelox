@@ -789,6 +789,7 @@ details li {
     width: 85vw;
     justify-content: center;
     align-items: end;
+    gap: 0;
   }
   #menu-toggle ~ .menu li {
     height: 20%;
