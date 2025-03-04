@@ -410,6 +410,7 @@
         };
 
         function renderTable(data, tableId) {
+            $('input[type="checkbox"]').prop('checked', false);
             let tableBody = document.getElementById(tableId);
             tableBody.innerHTML = "";
             
