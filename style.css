@@ -709,7 +709,7 @@ details li {
     justify-content: space-between;
     background-color: #272727;
     color: #FFF;
-    height: 100px;
+    height: 120px;
     padding: 1em;
   }
   
@@ -774,12 +774,13 @@ details li {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 60px;
+    transform: translateY(0%);
+    transform: translateX(10%);
     left: 0;
     flex-direction: column;
-    width: 100vw;
+    width: 95vw;
     justify-content: center;
-    align-items: center;
+    align-items: end;
   }
   #menu-toggle ~ .menu li {
     height: 20%;
