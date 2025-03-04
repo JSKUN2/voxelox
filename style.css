@@ -92,10 +92,11 @@ nav {
   letter-spacing: 3%;
 }
 .card {
-  max-height: 350px;
-  height: 350px;
+  margin-top: 25px;
+  max-height: 340px;
+  height: 340px;
   box-shadow: 0px 10px 30px 0px #00000040;
-  width: 210px;
+  width: 200px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -777,9 +778,12 @@ details li {
     color: white;
   }
   .card{
-    width: 45vw;
+    width: 50svw;
     max-height: 320px;
     margin: 0;
+  }
+  .homecard h1{
+    font-size: 160%;
   }
   .card h3{
     font-size: 16px;
@@ -789,6 +793,7 @@ details li {
   }
   .vps{
     gap: 10px;
+    flex-direction: column;
   }
   .homecard h1{
     margin-bottom: 25px;
