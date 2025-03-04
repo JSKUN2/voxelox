@@ -8,7 +8,6 @@ body {
 * {
   max-width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .body {
@@ -230,6 +229,7 @@ body {
 }
 .features .card {
   height: 300px;
+  width: 260px;
   display: grid;
   flex-direction: column;
   justify-content: space-between;
@@ -627,7 +627,7 @@ details li {
     width: 100%;
     transform: translateY(100%);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   body > * {
     display: none;
   }
@@ -642,7 +642,7 @@ details li {
     color: white;
   }
   .card{
-    width: 100%;
+    width: 85%;
   }
   .card h3{
     font-size: 16px;
@@ -780,7 +780,7 @@ details li {
     transform: translateX(10%);
     left: 0;
     flex-direction: column;
-    width: 90vw;
+    width: 85vw;
     justify-content: center;
     align-items: end;
   }
