@@ -706,11 +706,11 @@ details li {
     z-index: 111;
     transition: all 0.5s;
     text-align: center;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 65px;
+    top: 55px;
     font-size: 18px;
     font-family: sans-serif;
     font-weight: 100;
