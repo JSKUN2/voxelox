@@ -70,7 +70,7 @@
             <div class="fitur">
                 <section class="container">
                     <div>
-                        <div class="deskripsi" style="display: flex; flex-direction: column; gap: 0; justify-content: center; width: 90vw;">
+                        <div class="deskripsi" style="display: flex; flex-direction: column; gap: 0; justify-content: center; width: 80vw;">
                             <h1>The Powerful Features</h1>
                             <p>We will provide the best quality for the server by understanding your needs. Providing the best experience for your hosting</p><br><br>
                         </div>
@@ -395,6 +395,8 @@
                 $(window).scrollTop($("div.discord").position().top);
             });
             $(".kartuharga").click(function (e) { 
+                $(".kartuharga").css("background", "#F9F9F9");
+                $(this).css("background", "#F5F9FF");
                 $(".bayarkartu").hide();
                 $(this).find(".bayarkartu").css("display","flex");
             });

@@ -81,7 +81,7 @@
             <div class="fitur">
                 <section class="container">
                     <div>
-                        <div class="deskripsi" style="display: flex; flex-direction: column; gap: 0; justify-content: center; width: 90vw;">
+                        <div class="deskripsi" style="display: flex; flex-direction: column; gap: 0; justify-content: center; width: 80vw;">
                             <h1>The Powerful Features</h1>
                             <p>We will provide the best quality for the server by understanding your needs. Providing the best experience for your hosting</p><br><br>
                         </div>
@@ -473,6 +473,8 @@
             });
 
             $(document).on("click", ".bk1", function () {
+                $(".bk1").css("background", "#F9F9F9");
+                $(this).css("background", "#F5F9FF");
                 $(".bk1").find(".bayarkartu").css("display", "none");
                 $(this).find(".bayarkartu").css("display", "flex");
             });
