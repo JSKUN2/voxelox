@@ -642,7 +642,8 @@ details li {
     color: white;
   }
   .card{
-    width: 85%;
+    width: 90%;
+    max-height: 320px;
     margin: 0;
   }
   .card h3{
