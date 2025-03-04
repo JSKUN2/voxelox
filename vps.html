@@ -23,7 +23,7 @@
 </style>
 <body>
     <div class="mobileContainer">
-        <div style="background-color: #272727; height: fit-content; max-width: 700px; display: flex; box-sizing: border-box; flex-direction: row; padding-top: 10px; padding-bottom: 10px;">
+        <div style="background-color: #272727; height: fit-content; max-width: 700px; display: flex; flex-direction: row; align-items: center; justify-content: center;margin-top: auto;">
             <section class="top-nav">
                 <input id="menu-toggle" type="checkbox" />
                 <label class='menu-button-container' for="menu-toggle">
@@ -33,12 +33,12 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="vps.html" class="active">VPS</a></li>
                     <li><a href="discord.html">Discord Hosting</a></li>
-                    <li><a href="">Client Area</a></li>
+                    <li><a href="https://clients.voxelox.com/">Client Area</a></li>
                 </ul>
               </section>
-            <div style="display: flex; flex-direction: column; align-items: center; height: 100%; width: 100%; justify-content: center">
+            <div style="display: flex; flex-direction: column; align-items: center; height: 100%; width: 100%; justify-content: center;">
                 <div style="display: flex; align-items: center">
-                    <div style="display: flex; flex-direction: column; align-items: start">
+                    <div style="display: flex; flex-direction: column; align-items: start; justify-content: center; margin-top: auto; margin-bottom: auto;">
                         <div style="font-size: 22px; color: White; font-weight: 800;">Voxelox Hosting</div>
                         <div style="font-size: 14px; color: white; margin-top: 4px; font-weight: 300; line-height: 3px;">“Hosting Made Simple, Fast and Secure”</div>
                     </div>
@@ -79,7 +79,7 @@
         </div>
         <div class="bottom">
             <div class="fitur">
-                <section class="container">
+                <section class="container" style="margin-left: 5%; margin-right: 5%;">
                     <div>
                         <div class="deskripsi" style="display: flex; flex-direction: column; gap: 0; justify-content: center; width: 400px;">
                             <h1>The Powerful Features</h1>
@@ -160,7 +160,6 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="vps.html" class="active">VPS</a></li>
                                     <li><a href="discord.html">Discord Hosting</a></li>
-                                    <li><a href="">Client Area</a></li>
                                 </ul>
                             </div>
                             <div class="submenu">
@@ -192,7 +191,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="vps.html" class="active">VPS</a></li>
                     <li><a href="discord.html">Discord Hosting</a></li>
-                    <li><button class="clientbt">Client Area</button></li>
+                    <li><a href="https://clients.voxelox.com/"><button class="clientbt">Client Area</button></a></li>
                 </ul>
             </div>
         </nav>
@@ -386,27 +385,27 @@
         );
         const intelData = {
             "products": [
-                { "name": "Small", "cpu": "1 Virtual Core", "memory": "6 GB", "disk": "40 GB", "price": "Rp. 80.000" },
-                { "name": "Starter", "cpu": "2 Virtual Core", "memory": "8 GB", "disk": "50 GB", "price": "Rp. 100.000" },
-                { "name": "Newcomer", "cpu": "4 Virtual Core", "memory": "12 GB", "disk": "100 GB", "price": "Rp. 130.000" },
-                { "name": "Boost", "cpu": "4 Virtual Core", "memory": "16 GB", "disk": "150 GB", "price": "Rp. 160.000" },
-                { "name": "Super", "cpu": "6 Virtual Core", "memory": "24 GB", "disk": "200 GB", "price": "Rp. 230.000" },
-                { "name": "Expert", "cpu": "6 Virtual Core", "memory": "36 GB", "disk": "250 GB", "price": "Rp. 300.000" },
-                { "name": "Big", "cpu": "8 Virtual Core", "memory": "48 GB", "disk": "300 GB", "price": "Rp. 400.000" },
-                { "name": "Mega", "cpu": "8 Virtual Core", "memory": "64 GB", "disk": "350 GB", "price": "Rp. 600.000" }
+                { "name": "Small", "cpu": "1 Virtual Core", "memory": "6 GB", "disk": "40 GB", "price": "Rp. 80.000","link":"https://clients.voxelox.com/order/config/index/intel-vps/?group_id=3&pricing_id=20" },
+                { "name": "Starter", "cpu": "2 Virtual Core", "memory": "8 GB", "disk": "50 GB", "price": "Rp. 100.000","link":"https://clients.voxelox.com/order/config/index/intel-vps/?group_id=3&pricing_id=24" },
+                { "name": "Newcomer", "cpu": "4 Virtual Core", "memory": "12 GB", "disk": "100 GB", "price": "Rp. 130.000","link":"https://clients.voxelox.com/order/config/index/intel-vps/?group_id=3&pricing_id=28" },
+                { "name": "Boost", "cpu": "4 Virtual Core", "memory": "16 GB", "disk": "150 GB", "price": "Rp. 160.000","link":"https://clients.voxelox.com/order/config/index/intel-vps/?group_id=3&pricing_id=32" },
+                { "name": "Super", "cpu": "6 Virtual Core", "memory": "24 GB", "disk": "200 GB", "price": "Rp. 230.000","link":"https://clients.voxelox.com/order/config/index/intel-vps/?group_id=3&pricing_id=36" },
+                { "name": "Expert", "cpu": "6 Virtual Core", "memory": "36 GB", "disk": "250 GB", "price": "Rp. 300.000","link":"https://clients.voxelox.com/order/config/index/intel-vps/?group_id=3&pricing_id=40" },
+                { "name": "Big", "cpu": "8 Virtual Core", "memory": "48 GB", "disk": "300 GB", "price": "Rp. 400.000","link":"https://clients.voxelox.com/order/config/index/intel-vps/?group_id=3&pricing_id=44" },
+                { "name": "Mega", "cpu": "8 Virtual Core", "memory": "64 GB", "disk": "350 GB", "price": "Rp. 600.000","link":"https://clients.voxelox.com/order/config/index/intel-vps/?group_id=3&pricing_id=48" }
             ]
         };
 
         const ryzenData = {
             "products": [
-                { "name": "Small", "cpu": "1 Virtual Core", "memory": "2 GB", "disk": "20 GB", "price": "Rp. 80.000" },
-                { "name": "Starter", "cpu": "1 Virtual Core", "memory": "4 GB", "disk": "25 GB", "price": "Rp. 100.000" },
-                { "name": "Newcomer", "cpu": "2 Virtual Core", "memory": "6 GB", "disk": "50 GB", "price": "Rp. 130.000" },
-                { "name": "Boost", "cpu": "2 Virtual Core", "memory": "8 GB", "disk": "50 GB", "price": "Rp. 160.000" },
-                { "name": "Super", "cpu": "3 Virtual Core", "memory": "12 GB", "disk": "75 GB", "price": "Rp. 230.000" },
-                { "name": "Expert", "cpu": "4 Virtual Core", "memory": "16 GB", "disk": "120 GB", "price": "Rp. 300.000" },
-                { "name": "Big", "cpu": "6 Virtual Core", "memory": "24 GB", "disk": "160 GB", "price": "Rp. 400.000" },
-                { "name": "Mega", "cpu": "6 Virtual Core", "memory": "32 GB", "disk": "200 GB", "price": "Rp. 600.000" }
+                { "name": "Small", "cpu": "1 Virtual Core", "memory": "2 GB", "disk": "20 GB", "price": "Rp. 80.000", "link":"https://clients.voxelox.com/order/config/index/ryzen-vps/?group_id=4&pricing_id=52"},
+                { "name": "Starter", "cpu": "1 Virtual Core", "memory": "4 GB", "disk": "25 GB", "price": "Rp. 100.000","link":"https://clients.voxelox.com/order/config/index/ryzen-vps/?group_id=4&pricing_id=56"},
+                { "name": "Newcomer", "cpu": "2 Virtual Core", "memory": "6 GB", "disk": "50 GB", "price": "Rp. 130.000","link":"https://clients.voxelox.com/order/config/index/ryzen-vps/?group_id=4&pricing_id=60"},
+                { "name": "Boost", "cpu": "2 Virtual Core", "memory": "8 GB", "disk": "50 GB", "price": "Rp. 160.000", "link":"https://clients.voxelox.com/order/config/index/ryzen-vps/?group_id=4&pricing_id=64"},
+                { "name": "Super", "cpu": "3 Virtual Core", "memory": "12 GB", "disk": "75 GB", "price": "Rp. 230.000","link":"https://clients.voxelox.com/order/config/index/ryzen-vps/?group_id=4&pricing_id=68"},
+                { "name": "Expert", "cpu": "4 Virtual Core", "memory": "16 GB", "disk": "120 GB", "price": "Rp. 300.000","link":"https://clients.voxelox.com/order/config/index/ryzen-vps/?group_id=4&pricing_id=72"},
+                { "name": "Big", "cpu": "6 Virtual Core", "memory": "24 GB", "disk": "160 GB", "price": "Rp. 400.000","link":"https://clients.voxelox.com/order/config/index/ryzen-vps/?group_id=4&pricing_id=76"},
+                { "name": "Mega", "cpu": "6 Virtual Core", "memory": "32 GB", "disk": "200 GB", "price": "Rp. 600.000","link":"https://clients.voxelox.com/order/config/index/ryzen-vps/?group_id=4&pricing_id=80"}
             ]
         };
 
@@ -421,7 +420,7 @@
                     <td>${product.memory}</td>
                     <td>${product.disk}</td>
                     <td>${product.price}</td>
-                    <td><center><a href="#" class="purchase-btn">Purchase</a></center></td>
+                    <td><center><a href="${product.link}" class="purchase-btn">Purchase</a></center></td>
                 </tr>`;
                 tableBody.innerHTML += row;
             });
@@ -452,7 +451,7 @@
                             </div>
                             <div class="bayarkartu"  style="width:90%; display:flex; flex-direction:row; background: #1C6CE4; margin:auto; border-radius:300px; height:40px; padding-left:20px; padding-right:5px; align-items:center; justify-content:space-between; margin-top:20px; display:none;">
                                 <div class="hargakartubayar">${product.price}</div>
-                                <button class="bayarkartutombol">Purchase</button>    
+                                <a href="${product.link}"><button class="bayarkartutombol">Purchase</button></a>  
                             </div>
                         </div>
                         `;

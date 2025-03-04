@@ -233,15 +233,19 @@ body {
   justify-content: space-between;
 }
 .container {
-  display: flex;
-  flex-direction: row;
-  padding: 30px;
-  max-width: 100vw;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 .container div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 5%;
 }
 .deskripsi {
   display: flex;
@@ -297,6 +301,7 @@ body {
   justify-content: column;
   color: #f9f9f9;
   height: fit-content;
+  margin-left: 10px;
 }
 .bottomlogo img {
   width: 40px;
@@ -314,6 +319,11 @@ body {
   font-family: Inter;
   font-weight: 400;
   font-size: 10px;
+}
+.bottomlogo div{
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .subbottomnav {
   display: flex;
@@ -371,7 +381,8 @@ body {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 3%;
-  color: #f9f9f9;
+  margin-top: 3px;
+  color: #eaeaea;
 }
 .vpstype{
     border: none;
@@ -629,13 +640,13 @@ details li {
     color: white;
   }
   .card{
-    width: 90% ;
+    width: 90%;
   }
   .card h3{
     font-size: 16px;
   }
   .card p{
-    font-size: 8px;
+    font-size: 12px;
   }
   .vps{
     gap: 21px;
@@ -698,17 +709,10 @@ details li {
     justify-content: space-between;
     background-color: #272727;
     color: #FFF;
-    height: 50px;
+    height: 80px;
     padding: 1em;
   }
   
-  .menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
   
   .menu > li {
     overflow: hidden;
@@ -770,10 +774,10 @@ details li {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    margin-top: 10%;
     left: 0;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     align-items: center;
   }
@@ -886,7 +890,7 @@ details li {
     text-align: left;
   }
   details summary{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   details *{
     align-items: start;
