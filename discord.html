@@ -380,6 +380,7 @@
             });
         }
         document.addEventListener("DOMContentLoaded", function() {
+            $('input[type="checkbox"]').prop('checked', false);
             renderTable(jsonData,"priceTableBody");
             renderTableMobile(jsonData,"priceTableBodymbl");
             
