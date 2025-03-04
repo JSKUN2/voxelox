@@ -643,6 +643,7 @@ details li {
   }
   .card{
     width: 85%;
+    margin: 0;
   }
   .card h3{
     font-size: 16px;
