@@ -13,22 +13,22 @@
 </head>
 <body>
     <div class="mobileContainer">
+        <div class="navT">
+            <div class="icon"></div>
+          </div>
+          
+          <div id="menu">
+            <ul>
+                <li><a href="index.html" class="active">Hom<span class="space"></span>e</a></li>
+                <li><a href="vps.html">VP<span class="space"></span>S</a></li>
+                <li><a href="discord.html">Discord Hostin<span class="space"></span>g</a></li>
+                <li><a href="https://clients.voxelox.com/">Client Are<span class="space"></span>a</a></li>
+            </ul>
+          </div>
         <div style="background-color: #272727; height: 100vw; max-width: 100vw; display: flex; box-sizing: border-box; flex-direction: column;">
-            <section class="top-nav">
-                <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                <div class='menu-button'></div>
-              </label>
-                <ul class="menu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="vps.html">VPS</a></li>
-                    <li><a href="discord.html">Discord Hosting</a></li>
-                    <li><a href="https://clients.voxelox.com/">Client Area</a></li>
-                </ul>
-              </section>
             <div style="display: flex; flex-direction: column; align-items: center; height: 100%; width: 100%; justify-content: center">
                 <div style="display: flex; align-items: center">
-                    <img style="height: 50px; width: 50px; clip-path: circle(); margin-right: 10px" src="./logo.jpg"/>
+                    <img style="clip-path: circle(); margin-right: 10px" src="./logo.jpg" width="50" height="50"/>
                     <div style="display: flex; flex-direction: column; align-items: start">
                         <div style="font-size: 18px; color: White; font-weight: 800">Voxelox Hosting</div>
                         <div style="font-size: 10px; color: white; margin-top: 4px; font-weight: 300">“Hosting Made Simple, Fast and Secure”</div>
@@ -272,6 +272,11 @@
         </div>
     </div>
     <script>
+        $(".navT").on("click", function(){
+            $(this).toggleClass("active");
+            $("#menu").toggleClass("open");
+            $(".content").toggleClass("shift");
+            })
         $(document).ready(function () {
             $('input[type="checkbox"]').prop('checked', false);
         });
