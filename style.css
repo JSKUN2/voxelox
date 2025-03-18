@@ -61,12 +61,15 @@ nav {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: auto;
   align-items: center;
 }
 
 .menu ul li {
   margin: 0 15px;
+}
+.menu ul li a:hover{
+  color: #F9F9F9;
 }
 .menu ul li a{
     color: #808080;
@@ -111,16 +114,16 @@ nav {
   font-family: Inter;
   font-weight: 500;
   font-size: 20px;
-  line-height: 29.05px;
+  line-height: 30px;
   letter-spacing: 3%;
   margin: 0;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .card p {
   font-family: Inter;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 14.52px;
   letter-spacing: 3%;
   width: 80%;
@@ -333,9 +336,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 .bottomnav div div p {
-  color: #b3b3b3;
+  color: #f0f0f0;
 }
 .bmenu {
   display: flex;
@@ -364,13 +369,13 @@ body {
   font-size: 10px;
   line-height: 14.21px;
   letter-spacing: 3%;
-  color: #808080;
+  color: #F0F0F0;
   padding: 0;
 }
 .submenu ul li a {
   margin: 0;
   text-decoration: none;
-  color: #808080;
+  color: #F0F0F0;
 }
 .hr {
   width: 100%;
@@ -788,7 +793,7 @@ details li {
     font-size: 16px;
   }
   .card p{
-    font-size: 8px;
+    font-size: 12px;
   }
   .vps{
     gap: 10px;
