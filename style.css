@@ -338,8 +338,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .bottomnav div div p {
   color: #f0f0f0;
